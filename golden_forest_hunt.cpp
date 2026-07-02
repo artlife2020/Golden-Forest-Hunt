@@ -29,3 +29,19 @@ int main() {
             std::cout << "The chest was empty.\n";
             score += 2;
         }
+
+        std::cout << "Score: " << score << "\n";
+    }
+
+    std::cout << "\nAdventure Complete!\n";
+    std::cout << "Final Score: " << score << "\n";
+
+    if (score >= 40)
+        std::cout << "Legendary Treasure Hunter!\n";
+    else if (score >= 20)
+        std::cout << "Nice exploration!\n";
+    else
+        std::cout << "Try another expedition.\n";
+
+    return 0;
+}
